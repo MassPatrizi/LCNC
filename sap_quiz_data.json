@@ -1,0 +1,815 @@
+[
+  {
+    "id": 1,
+    "question": "When using Actions projects, why must you create a Destination?",
+    "options": [
+      "To define the technical address of the remote system",
+      "To obfuscate API endpoint details from unauthorized users",
+      "To limit the API calls made by Actions projects"
+    ],
+    "correct": 0,
+    "memory_technique": "Visualizza una destinazione su una mappa GPS: senza l'indirizzo tecnico, non sai dove andare."
+  },
+  {
+    "id": 2,
+    "question": "Which functionality does the Process Builder tool in SAP Build Process Automation support? (Select 3)",
+    "options": [
+      "Writing code manually to create processes",
+      "Creation and use of forms and approval forms",
+      "Building decisions or business rules",
+      "Building CI/CD pipelines",
+      "Construction of automations and bots"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "memory_technique": "Tre icone: modulo cartaceo, bilancia (decisione), robot."
+  },
+  {
+    "id": 3,
+    "question": "What is the SAP Build Process Automation Store?",
+    "options": [
+      "A place to which users can upload their own automations",
+      "A place that offers prebuilt content free of charge",
+      "A place for SAP partners to sell content",
+      "A platform for purchasing SAP licenses"
+    ],
+    "correct": 1,
+    "memory_technique": "Negozio con cartello 'GRATIS'."
+  },
+  {
+    "id": 4,
+    "question": "In SAP Build process automation, which file extension is assigned to exported projects?",
+    "options": [
+      ".mtar",
+      ".proj",
+      ".zip",
+      ".exp"
+    ],
+    "correct": 0,
+    "memory_technique": "'Modular tarball' (mtar): scatola con etichetta MTAR."
+  },
+  {
+    "id": 5,
+    "question": "What must you do to configure an Actions project for an SAP S/4HANA API? (Select 2)",
+    "options": [
+      "Assign descriptive names to API endpoints",
+      "Configure OAuth authentication for API access",
+      "Upload the JSON file into the Actions project",
+      "Download the API specification JSON file"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "memory_technique": "Chiave OAuth che apre una porta dopo aver letto la mappa JSON."
+  },
+  {
+    "id": 6,
+    "question": "What is the purpose of encapsulating APIs in Actions projects?",
+    "options": [
+      "To access API endpoints",
+      "To limit the accessibility of APIs across different projects",
+      "To expose APIs without filtering"
+    ],
+    "correct": 1,
+    "memory_technique": "Capsula protettiva che limita l'accesso."
+  },
+  {
+    "id": 7,
+    "question": "What are core elements of a Business Process Management (BPM) system? (Select 3)",
+    "options": [
+      "Standardized tools to manage processes",
+      "Faster identification of breakdowns and processes",
+      "Real-time process execution and measurement",
+      "Improved collaboration between departments",
+      "Increased administrative work"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "memory_technique": "Cassetta attrezzi standard, orologio in tempo reale, stretta di mano collaborativa."
+  },
+  {
+    "id": 8,
+    "question": "In SAP Build Process Automation, what are some characteristics of Actions projects? (Select 2)",
+    "options": [
+      "They encapsulate APIs from various systems",
+      "They support versioning",
+      "They are used for direct API integrations",
+      "They are limited to SAP systems APIs"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "memory_technique": "Capsula con diverse API colorate ed etichette di versione."
+  },
+  {
+    "id": 9,
+    "question": "Interacting with SAP Build Process Automation APIs, what does a REST API client do?",
+    "options": [
+      "It simplifies technical communication",
+      "It automates process workflows",
+      "It provides visual representations of API responses",
+      "It ensures data encryption during API transactions"
+    ],
+    "correct": 0,
+    "memory_technique": "Un traduttore simultaneo tra sistemi."
+  },
+  {
+    "id": 10,
+    "question": "What are some benefits of using SAP Build Process Automation? (Select 3)",
+    "options": [
+      "Increased organizational efficiency",
+      "Enhanced monitoring of authorizations",
+      "Increased visibility into process breakdowns and failures",
+      "Enhanced visibility into organizational activity",
+      "Improved communication and collaboration across lines of business"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "memory_technique": "Ingranaggio (efficienza), binocolo (visibilitÃ ), rete (collaborazione)."
+  },
+  {
+    "id": 11,
+    "question": "What are some benefits of using Process Variants in SAP Build Process Automation? (Select 2)",
+    "options": [
+      "Processes follow the same template without changes and exceptions",
+      "The complexity of underlying processes is hidden",
+      "Processes can be adapted to changing business requirements without coding",
+      "SAP Build applications are updated automatically"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "memory_technique": "Pannello che nasconde complessitÃ  e leva che adatta rapidamente."
+  },
+  {
+    "id": 12,
+    "question": "How can you create a new Process Variant in Live Process Content? (Select 2)",
+    "options": [
+      "By manually adjusting backend database entries",
+      "By using the Process Variant Editor to modify preconfigured variants",
+      "By downloading additional process components from the SAP Store",
+      "By using the process editor to drag and drop process steps from the process template"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "memory_technique": "Puzzle: sposti e modifichi i pezzi con un editor."
+  },
+  {
+    "id": 13,
+    "question": "Using SAP Build Process Automation, what is the purpose of deploying a business process project?",
+    "options": [
+      "To create a version of the project",
+      "To edit the project",
+      "To make the project available for others to use",
+      "To release the project"
+    ],
+    "correct": 2,
+    "memory_technique": "Bacheca pubblica dove tutti vedono il progetto."
+  },
+  {
+    "id": 14,
+    "question": "What advantage does using Live Process Content offer?",
+    "options": [
+      "Easy import, customization, and activation of content",
+      "Free provisioning of SAP modules",
+      "Creation of custom content without pre-configuration",
+      "Automatic implementation of SAP modules"
+    ],
+    "correct": 1,
+    "memory_technique": "Robot che consegna moduli SAP gratuiti."
+  },
+  {
+    "id": 15,
+    "question": "What is a process variant in Live Process Content?",
+    "options": [
+      "A process flow to map business rules",
+      "A specific configuration of a process template",
+      "A temporary file for testing purposes"
+    ],
+    "correct": 1,
+    "memory_technique": "Torta base con diversi 'gusti' (varianti)."
+  },
+  {
+    "id": 16,
+    "question": "How does SAP Build Process Automation interact with SAP S/4HANA systems?",
+    "options": [
+      "By replacing APIs with proprietary protocols",
+      "By providing Actions projects for encapsulating API endpoints",
+      "By integrating directly with SAP GUI for seamless data exchange"
+    ],
+    "correct": 1,
+    "memory_technique": "Capsule che fanno da ponte tra sistemi."
+  },
+  {
+    "id": 17,
+    "question": "What does a typical Live Process Content package include?",
+    "options": [
+      "Live Process configurations",
+      "A Process Template, Decisions, and a Visibility Scenario",
+      "Instructions for configuring SAP S/4HANA"
+    ],
+    "correct": 1,
+    "memory_technique": "Kit con schema, giudice (decisione), binocolo (visibilitÃ )."
+  },
+  {
+    "id": 18,
+    "question": "Why does SAP recommend IT governance for citizen development?",
+    "options": [
+      "To ensure applications are secure, scalable, and compliant with corporate standards",
+      "To centralize control and decision making within low-code development",
+      "To exercise financial control over all software development projects"
+    ],
+    "correct": 0,
+    "memory_technique": "Lucchetto che protegge la crescita sicura."
+  },
+  {
+    "id": 19,
+    "question": "What can citizen developers do with SAP Build?",
+    "options": [
+      "Build integration flows",
+      "Work on backend systems and server management",
+      "Build applications and automate processes",
+      "Configure role collections"
+    ],
+    "correct": 2,
+    "memory_technique": "Costruttore con casco che automatizza una catena di montaggio."
+  },
+  {
+    "id": 20,
+    "question": "What does the 'Process' component of the Governance Triad involve?",
+    "options": [
+      "Develop marketing strategies",
+      "Procure hardware",
+      "Create an IT trust blueprint",
+      "Set up financial guidelines for project budgeting"
+    ],
+    "correct": 2,
+    "memory_technique": "Piano architettonico con scritta 'fiducia IT'."
+  },
+  {
+    "id": 21,
+    "question": "What is the purpose of the prebuilt Digital Center of Excellence Toolkit for SAP Build?",
+    "options": [
+      "To provide professional developers with coding templates",
+      "To enforce low-code coding standards",
+      "To help IT administrators manage and collaborate with citizen developers"
+    ],
+    "correct": 2,
+    "memory_technique": "Amministratore che collabora con un gruppo eterogeneo."
+  },
+  {
+    "id": 22,
+    "question": "Which governance capabilities does SAP Build offer? (Select 3)",
+    "options": [
+      "Limit the development to predefined templates",
+      "Establish eligibility rules for citizen developers",
+      "Provide prebuilt artifacts and use case content packages",
+      "Integrate CI/CD into development processes",
+      "Implement guardrails with built-in security"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "memory_technique": "Lista regole, scatola pre-costruita, guardrail sulla strada."
+  },
+  {
+    "id": 23,
+    "question": "Which role is NOT part of the 'People' component of the Governance Triad?",
+    "options": [
+      "External vendors",
+      "IT professionals",
+      "Citizen developers"
+    ],
+    "correct": 0,
+    "memory_technique": "Figura esterna fuori dalla 'triade'."
+  },
+  {
+    "id": 24,
+    "question": "What are potential disadvantages of shadow IT in low-code development projects? (Select 2)",
+    "options": [
+      "Compliance issues",
+      "Faster implementation",
+      "Higher autonomy of low-code developers",
+      "Security risks"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "memory_technique": "Avviso rosso 'non conforme' e lucchetto rotto."
+  },
+  {
+    "id": 25,
+    "question": "What does the 'Tools and Technologies' component of the Governance Triad include? (Select 2)",
+    "options": [
+      "Set up low-code/no-code platforms",
+      "Establish physical IT infrastructure",
+      "Adopt extensible DevOps practices",
+      "Manage access and authorization"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "memory_technique": "Piattaforma LC/NC con badge DevOps."
+  },
+  {
+    "id": 26,
+    "question": "Which of the following aspects are specific to the advanced edition of SAP Build Work Zone? (Select 2)",
+    "options": [
+      "Integrating SAP and third party business content",
+      "Blending of business data and unstructured content",
+      "Empowering end users to create content",
+      "Unifying access to SAP business applications"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "memory_technique": "Unire due loghi (SAP + terzi) in un mixer."
+  },
+  {
+    "id": 27,
+    "question": "What mechanism is typically used to integrate applications from SAP S/4HANA into SAP Build Work Zone?",
+    "options": [
+      "Export/Import",
+      "SAP BTP",
+      "Content Federation",
+      "SAP Business Application Studio"
+    ],
+    "correct": 2,
+    "memory_technique": "Federazione di contenuti come bandiera con loghi multipli."
+  },
+  {
+    "id": 28,
+    "question": "Which tool can you use to add business apps to the Applications menu?",
+    "options": [
+      "Work Zone Configurator",
+      "Content Manager",
+      "Channel Manager",
+      "Administration Console"
+    ],
+    "correct": 1,
+    "memory_technique": "Manager che aggiunge app a una lista."
+  },
+  {
+    "id": 29,
+    "question": "Which of the following features can you enable as tabs in a workspace navigation bar? (Select 3)",
+    "options": [
+      "Forums",
+      "Content",
+      "Workpages",
+      "Messages",
+      "Applications"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "memory_technique": "Tre icone: chat, fogli, pagine."
+  },
+  {
+    "id": 30,
+    "question": "Out of the box, which Microsoft products are integrated with SAP Build Work Zone? (Select 2)",
+    "options": [
+      "Microsoft Teams",
+      "Microsoft Power BI",
+      "Microsoft SharePoint",
+      "Microsoft Excel"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "memory_technique": "Icone Teams e SharePoint dentro una scatola regalo."
+  },
+  {
+    "id": 31,
+    "question": "In My Inbox, you can access content from which of the following components? (Select 2)",
+    "options": [
+      "Notifications from other SAP solutions",
+      "Workflows from SAP Build Process Automation",
+      "Notifications from SAP SuccessFactors",
+      "Workflows from SAP Build Work Zone"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "memory_technique": "Inbox che raccoglie notifiche e flussi di lavoro."
+  },
+  {
+    "id": 32,
+    "question": "What must you do to configure the Site Menu? (Select 2)",
+    "options": [
+      "Customize layout",
+      "Access the site menu configuration",
+      "Create a custom template",
+      "Edit menu items"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "memory_technique": "MenÃ¹ con chiave di accesso e matita per modificare."
+  },
+  {
+    "id": 33,
+    "question": "Where can knowledge base articles be created?",
+    "options": [
+      "In the central Knowledge Base feature",
+      "In My Workspace",
+      "In the central Content Manager",
+      "In the Knowledge Base feature of each workspace"
+    ],
+    "correct": 0,
+    "memory_technique": "Archivio centrale come cuore dell'azienda."
+  },
+  {
+    "id": 34,
+    "question": "What are some reasons companies would create custom mobile apps for SAP Build Work Zone? (Select 2)",
+    "options": [
+      "To integrate with internal tools",
+      "To support Android devices",
+      "To support corporate branding & identity",
+      "To customize UI Cards"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "memory_technique": "Icona '+' (integrazione) e logo aziendale su cellulare."
+  },
+  {
+    "id": 35,
+    "question": "In SAP Build Work Zone, what can you use to enable notifications from third party apps?",
+    "options": [
+      "Side-by-side extension",
+      "SAP Mobile Start Configuration",
+      "My Inbox",
+      "Launchpad Plugins"
+    ],
+    "correct": 3,
+    "memory_technique": "Plugin che si inserisce in launchpad con icona notifica."
+  },
+  {
+    "id": 36,
+    "question": "When working with home pages, which of the following aspects need to be considered? (Select 2)",
+    "options": [
+      "Home pages are also workpages available only in the pre-defined 'Home' area of the site menu",
+      "Workpages outside of the menu entry 'Home' are not related to administrative areas",
+      "The editor has different layout options compared to workpages inside workspaces",
+      "Home pages are always shown to all users"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "memory_technique": "Etichetta 'Home' esclusiva con editor diverso."
+  },
+  {
+    "id": 37,
+    "question": "Which extensibility option does SAP recommend you use for SAP Build Work Zone?",
+    "options": [
+      "SAP Build Apps",
+      "SAP Integration Suite",
+      "UI Integration Cards",
+      "Cloud Connector to on-premise systems"
+    ],
+    "correct": 2,
+    "memory_technique": "Carte che espandono funzionalitÃ ."
+  },
+  {
+    "id": 38,
+    "question": "Which of the following do you use to integrate third-party apps with SAP Build Work Zone?",
+    "options": [
+      "Digital Workplace Service (DWS) API",
+      "SAP Build Apps Backend Configuration",
+      "SAP BTP Cockpit",
+      "SAP Integration Suite"
+    ],
+    "correct": 0,
+    "memory_technique": "API come ponte con badge DWS."
+  },
+  {
+    "id": 39,
+    "question": "Home pages from which product are included in the site menu 'Home' section after migration?",
+    "options": [
+      "SAP Enterprise Portal",
+      "SAP Jam Collaboration",
+      "SAP SuccessFactors",
+      "SAP Cloud Portal Service"
+    ],
+    "correct": 0,
+    "memory_technique": "Porta (portal) â†’ casa dopo migrazione."
+  },
+  {
+    "id": 40,
+    "question": "Where can users share feed updates including photos, comments, and other status updates with other users? (Select 2)",
+    "options": [
+      "Tools",
+      "My Workspace",
+      "Workspace",
+      "Profile"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "memory_technique": "Bacheca strumenti e scrivania personale."
+  },
+  {
+    "id": 41,
+    "question": "Which pre-defined section of the site menu is used to automatically surface the information from the content manager?",
+    "options": [
+      "Tools",
+      "Applications",
+      "Home",
+      "Workspaces"
+    ],
+    "correct": 2,
+    "memory_technique": "'Casa' dove si ritrova tutto."
+  },
+  {
+    "id": 42,
+    "question": "Which mechanism is used to expose SAP Build Work Zone to an external system?",
+    "options": [
+      "Gather and Track",
+      "Connect and Extend",
+      "Create and Read",
+      "Push and Pull"
+    ],
+    "correct": 1,
+    "memory_technique": "Cavo che connette ed estende."
+  },
+  {
+    "id": 43,
+    "question": "Which function call returns true?",
+    "options": [
+      "IS_EMAIL(@sap.com)",
+      "IS_EMAIL(\"@sap.com\")",
+      "IS_EMAIL(\"test@sap.com\")",
+      "IS_EMAIL(test@sap.com)"
+    ],
+    "correct": 2,
+    "memory_technique": "Solo con testo tra virgolette, @, e dominio valido."
+  },
+  {
+    "id": 44,
+    "question": "In SAP Build Apps, the data type 'Color' is part of which data type group?",
+    "options": [
+      "Text Types with Specific Format",
+      "Simple types",
+      "Reference types",
+      "Complex types"
+    ],
+    "correct": 1,
+    "memory_technique": "Il colore Ã¨ semplice da scegliere."
+  },
+  {
+    "id": 45,
+    "question": "Which of the following sections are available in the SAP Build Apps Marketplace? (Select 3)",
+    "options": [
+      "Data",
+      "View components",
+      "Integration",
+      "Security",
+      "Flow functions"
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "memory_technique": "Tre blocchi: dati, componenti visivi, funzioni flusso."
+  },
+  {
+    "id": 46,
+    "question": "In SAP Build Apps, which of the following can you set in the THEME tab? (Select 2)",
+    "options": [
+      "Fonts",
+      "Visual Cloud Functions",
+      "UI Component Catalog",
+      "Colors"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "memory_technique": "Arredare una stanza: tipografia e colore."
+  },
+  {
+    "id": 47,
+    "question": "In SAP Build Apps, which function returns the number of items in a list?",
+    "options": [
+      "COUNT",
+      "LENGTH",
+      "MAX",
+      "SUM"
+    ],
+    "correct": 1,
+    "memory_technique": "La 'lunghezza' di una lista."
+  },
+  {
+    "id": 48,
+    "question": "In SAP Build Apps, where can you configure the visibility of components?",
+    "options": [
+      "Properties tab",
+      "Data tab",
+      "Style tab",
+      "Layout tab"
+    ],
+    "correct": 0,
+    "memory_technique": "ProprietÃ  = controllo visibilitÃ ."
+  },
+  {
+    "id": 49,
+    "question": "In SAP Build Apps, in which of the following cases does the IS_EMPTY function return true? (Select 3)",
+    "options": [
+      "IS_EMPTY(NAN)",
+      "IS_EMPTY(0)",
+      "IS_EMPTY(\"a\")",
+      "IS_EMPTY(\"\")",
+      "IS_EMPTY(0) [duplicate]"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "memory_technique": "Valori nulli, vuoti o zero = empty."
+  },
+  {
+    "id": 50,
+    "question": "In SAP Build Apps, which of the following are layout components? (Select 3)",
+    "options": [
+      "List Divider",
+      "Dropdown",
+      "Container",
+      "Scroll View",
+      "Row"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "memory_technique": "Elementi base per griglie: divisore, contenitore, riga."
+  },
+  {
+    "id": 51,
+    "question": "While creating the collection of data records for a Data variable in SAP Build Apps, which of the following are available? (Select 2)",
+    "options": [
+      "Annotation extensions",
+      "Paging",
+      "User access permissions",
+      "Filter condition"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "memory_technique": "Sfoglia pagine e filtra risultati."
+  },
+  {
+    "id": 52,
+    "question": "Which of the following components are available in the Logic Canvas of SAP Build Apps? (Select 2)",
+    "options": [
+      "Input Field",
+      "Card",
+      "Confirm",
+      "Show spinner"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "memory_technique": "Conferma (OK) e caricamento (spinner)."
+  },
+  {
+    "id": 53,
+    "question": "In SAP Build Apps, which target platforms can you select when you build applications? (Select 3)",
+    "options": [
+      "Web App",
+      "IOS Mobile/Tablet",
+      "Windows",
+      "MacOS",
+      "Android Mobile/Tablet"
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "memory_technique": "Tutti i device principali, escluso desktop nativi."
+  },
+  {
+    "id": 54,
+    "question": "In SAP Build Apps, which function in the Formula Editor returns the current date?",
+    "options": [
+      "GET_DATETIME_COMPONENT",
+      "FETCH_DATE",
+      "GET_DATE",
+      "NOW"
+    ],
+    "correct": 3,
+    "memory_technique": "'Adesso' = NOW; parola secca e immediata."
+  },
+  {
+    "id": 55,
+    "question": "In SAP Build Apps, which of the following are part of the VARIABLES section of the Logic Canvas? (Select 2)",
+    "options": [
+      "Set Backend Variable",
+      "Set App Variable",
+      "Set User Variable",
+      "Set Page Variable"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "memory_technique": "Variabili a livello di applicazione o pagina."
+  },
+  {
+    "id": 56,
+    "question": "Which of the following can you do in the Launch tab of SAP Build Apps? (Select 2)",
+    "options": [
+      "Debug apps",
+      "Preview apps",
+      "Build apps",
+      "Configure destinations"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "memory_technique": "Da Launch puoi 'vedere anteprima' e 'costruire'."
+  },
+  {
+    "id": 57,
+    "question": "You want to use a variable value in multiple pages in an SAP Build Apps application. Which variable type can you use?",
+    "options": [
+      "Translation",
+      "Page",
+      "Sensor",
+      "App"
+    ],
+    "correct": 3,
+    "memory_technique": "Variabile globale = app."
+  },
+  {
+    "id": 58,
+    "question": "In SAP Build Apps, what are some classic data entities available? (Select 2)",
+    "options": [
+      "OData Integration",
+      "RFC Integration",
+      "REST API Direct Integration",
+      "SOAP Integration"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "memory_technique": "Due stili classici: OData e REST."
+  },
+  {
+    "id": 59,
+    "question": "In SAP Build Apps, besides data and variables, what else can you use to bind variables and data to components?",
+    "options": [
+      "JavaScript",
+      "Trigger Event",
+      "Formula"
+    ],
+    "correct": 2,
+    "memory_technique": "Lega tutto con una formula matematica."
+  },
+  {
+    "id": 60,
+    "question": "In SAP Build Apps, besides the Variable tab where can you find an overview of created variables?",
+    "options": [
+      "Formula Editor",
+      "Tree View",
+      "Data Tab",
+      "Logic Canvas"
+    ],
+    "correct": 1,
+    "memory_technique": "'Tree View' mostra struttura ad albero di tutte le variabili."
+  }
+]
