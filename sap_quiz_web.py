@@ -142,6 +142,12 @@ def init_session_state():
         st.session_state.shuffled_quiz = []
     if 'show_memory_help' not in st.session_state:
         st.session_state.show_memory_help = False
+    if 'show_result_dialog' not in st.session_state:
+        st.session_state.show_result_dialog = False
+    if 'last_answer_correct' not in st.session_state:
+        st.session_state.last_answer_correct = False
+    if 'last_correct_answer_text' not in st.session_state:
+        st.session_state.last_correct_answer_text = ""
 
 
 def start_quiz(shuffle=False):
@@ -194,6 +200,40 @@ def update_score(is_correct, question_index):
         st.session_state.score -= 1
     
     st.session_state.question_answered_correctly[question_index] = is_correct
+
+
+@st.dialog("Risultato Risposta", width="large")
+def show_result_popup():
+    """Mostra popup con risultato e aiuto"""
+    current_q = st.session_state.shuffled_quiz[st.session_state.current_question_index]
+    total_questions = len(st.session_state.shuffled_quiz)
+    is_last_question = st.session_state.current_question_index >= total_questions - 1
+    
+    if st.session_state.last_answer_correct:
+        st.success("### ✓ Risposta Esatta!")
+        st.balloons()
+    else:
+        st.error("### ✕ Risposta Sbagliata!")
+        st.markdown(f"**Risposta corretta:**")
+        st.info(st.session_state.last_correct_answer_text)
+    
+    st.markdown("---")
+    st.markdown("### 💡 Aiuto Memoria")
+    st.warning(current_q['memory_technique'])
+    st.markdown("---")
+    
+    # Pulsante per continuare
+    if is_last_question:
+        if st.button("🏁 Vai ai Risultati Finali", use_container_width=True, type="primary"):
+            st.session_state.show_result_dialog = False
+            st.session_state.current_question_index += 1
+            st.rerun()
+    else:
+        if st.button("→ Prossima Domanda", use_container_width=True, type="primary"):
+            st.session_state.show_result_dialog = False
+            st.session_state.current_question_index += 1
+            st.session_state.show_memory_help = False
+            st.rerun()
 
 
 def show_home_page():
@@ -321,16 +361,12 @@ def show_quiz():
         
         st.session_state.user_answers[st.session_state.current_question_index] = selected_option
     
-    # Frame aiuto memoria
-    if st.session_state.show_memory_help:
-        st.markdown(f"""
-        <div class="memory-card">
-            <p style="color: #f1c40f; margin: 0;">💡 {current_q['memory_technique']}</p>
-        </div>
-        """, unsafe_allow_html=True)
+    # Mostra il dialog se necessario
+    if st.session_state.show_result_dialog:
+        show_result_popup()
     
     # Pulsanti di navigazione
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3 = st.columns(3)
     
     with col1:
         if st.session_state.current_question_index > 0:
@@ -342,12 +378,7 @@ def show_quiz():
             st.button("← Precedente", disabled=True, use_container_width=True)
     
     with col2:
-        if st.button("💡 AIUTO", use_container_width=True):
-            st.session_state.show_memory_help = not st.session_state.show_memory_help
-            st.rerun()
-    
-    with col3:
-        if st.button("✓ Invia", use_container_width=True):
+        if st.button("✓ Invia", use_container_width=True, type="primary"):
             user_answer = st.session_state.user_answers.get(st.session_state.current_question_index)
             correct_answer = current_q['correct']
             
@@ -357,35 +388,21 @@ def show_quiz():
                 is_correct = check_answer(user_answer, correct_answer, is_multiple)
                 update_score(is_correct, st.session_state.current_question_index)
                 
-                if is_correct:
-                    st.success(f"✓ Esatto!\n\n💡 {current_q['memory_technique']}")
-                else:
+                # Prepara i dati per il popup
+                st.session_state.last_answer_correct = is_correct
+                
+                if not is_correct:
                     if is_multiple:
                         correct_options = [current_q['options'][i] for i in correct_answer]
-                        st.error(f"✕ Sbagliato!\n\nRisposte corrette:\n" + 
-                                "\n".join([f"• {opt}" for opt in correct_options]) +
-                                f"\n\n💡 {current_q['memory_technique']}")
+                        st.session_state.last_correct_answer_text = "\n".join([f"• {opt}" for opt in correct_options])
                     else:
-                        st.error(f"✕ Sbagliato!\n\nRisposta corretta:\n{current_q['options'][correct_answer]}\n\n💡 {current_q['memory_technique']}")
+                        st.session_state.last_correct_answer_text = current_q['options'][correct_answer]
                 
-                # Vai alla prossima domanda dopo un breve delay
-                if st.session_state.current_question_index < total_questions - 1:
-                    st.session_state.current_question_index += 1
-                    st.session_state.show_memory_help = False
-                    st.rerun()
-                else:
-                    show_final_score()
-    
-    with col4:
-        if st.session_state.current_question_index < total_questions - 1:
-            if st.button("→ Prossima", use_container_width=True):
-                st.session_state.current_question_index += 1
-                st.session_state.show_memory_help = False
+                # Apri il dialog
+                st.session_state.show_result_dialog = True
                 st.rerun()
-        else:
-            st.button("→ Prossima", disabled=True, use_container_width=True)
     
-    with col5:
+    with col3:
         if st.button("✕ Esci", use_container_width=True):
             reset_quiz()
             st.rerun()
