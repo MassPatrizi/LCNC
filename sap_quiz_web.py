@@ -148,6 +148,23 @@ def init_session_state():
         st.session_state.last_answer_correct = False
     if 'last_correct_answer_text' not in st.session_state:
         st.session_state.last_correct_answer_text = ""
+    if 'shuffled_options' not in st.session_state:
+        st.session_state.shuffled_options = {}
+
+
+def get_shuffled_options(question_index):
+    """Ottiene le opzioni mischiate per una domanda, creandole se non esistono"""
+    if question_index not in st.session_state.shuffled_options:
+        current_q = st.session_state.shuffled_quiz[question_index]
+        num_options = len(current_q['options'])
+        
+        # Crea una lista di indici e la mescola
+        shuffled_indices = list(range(num_options))
+        random.shuffle(shuffled_indices)
+        
+        st.session_state.shuffled_options[question_index] = shuffled_indices
+    
+    return st.session_state.shuffled_options[question_index]
 
 
 def start_quiz(shuffle=False):
@@ -159,6 +176,7 @@ def start_quiz(shuffle=False):
     st.session_state.user_answers = {}
     st.session_state.question_answered_correctly = {}
     st.session_state.show_memory_help = False
+    st.session_state.shuffled_options = {}
     
     quiz_data = load_quiz_data()
     if shuffle:
@@ -176,6 +194,7 @@ def reset_quiz():
     st.session_state.user_answers = {}
     st.session_state.question_answered_correctly = {}
     st.session_state.show_memory_help = False
+    st.session_state.shuffled_options = {}
 
 
 def check_answer(user_answer, correct_answer, is_multiple):
@@ -211,7 +230,6 @@ def show_result_popup():
     
     if st.session_state.last_answer_correct:
         st.success("### ✓ Risposta Esatta!")
-        st.balloons()
     else:
         st.error("### ✕ Risposta Sbagliata!")
         st.markdown(f"**Risposta corretta:**")
@@ -329,37 +347,49 @@ def show_quiz():
     </div>
     """, unsafe_allow_html=True)
     
+    # Ottieni l'ordine shuffled delle opzioni
+    shuffled_indices = get_shuffled_options(st.session_state.current_question_index)
+    
     # Opzioni di risposta
     if is_multiple:
         # Multiple choice
         selected_options = []
         
-        for idx, option in enumerate(current_q['options']):
-            # Ripristina selezioni salvate
-            saved_answer = st.session_state.user_answers.get(st.session_state.current_question_index, [])
-            checked = idx in saved_answer
+        for display_idx, original_idx in enumerate(shuffled_indices):
+            option = current_q['options'][original_idx]
             
-            if st.checkbox(option, key=f"option_{idx}", value=checked):
-                if idx not in selected_options:
-                    selected_options.append(idx)
+            # Ripristina selezioni salvate (usando indici originali)
+            saved_answer = st.session_state.user_answers.get(st.session_state.current_question_index, [])
+            checked = original_idx in saved_answer
+            
+            if st.checkbox(option, key=f"option_{display_idx}", value=checked):
+                if original_idx not in selected_options:
+                    selected_options.append(original_idx)
             else:
-                if idx in selected_options:
-                    selected_options.remove(idx)
+                if original_idx in selected_options:
+                    selected_options.remove(original_idx)
         
         st.session_state.user_answers[st.session_state.current_question_index] = selected_options.copy()
     else:
         # Single choice
         saved_answer = st.session_state.user_answers.get(st.session_state.current_question_index, None)
         
-        selected_option = st.radio(
+        # Trova l'indice di display dell'opzione salvata
+        saved_display_index = None
+        if saved_answer is not None:
+            saved_display_index = shuffled_indices.index(saved_answer)
+        
+        selected_display_idx = st.radio(
             "Seleziona una risposta:",
-            options=range(len(current_q['options'])),
-            format_func=lambda x: current_q['options'][x],
+            options=range(len(shuffled_indices)),
+            format_func=lambda x: current_q['options'][shuffled_indices[x]],
             key="radio_answer",
-            index=saved_answer if saved_answer is not None else 0
+            index=saved_display_index if saved_display_index is not None else 0
         )
         
-        st.session_state.user_answers[st.session_state.current_question_index] = selected_option
+        # Salva l'indice originale (non quello shuffled)
+        selected_original_idx = shuffled_indices[selected_display_idx]
+        st.session_state.user_answers[st.session_state.current_question_index] = selected_original_idx
     
     # Mostra il dialog se necessario
     if st.session_state.show_result_dialog:
