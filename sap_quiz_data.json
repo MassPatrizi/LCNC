@@ -36,8 +36,8 @@
       "A place for SAP partners to sell content",
       "A platform for purchasing SAP licenses"
     ],
-    "correct": 1,
-    "memory_technique": "Negozio con cartello 'GRATIS'."
+    "correct": 2,
+    "memory_technique": "Store = vende cose."
   },
   {
     "id": 4,
