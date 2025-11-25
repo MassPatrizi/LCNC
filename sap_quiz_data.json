@@ -25,7 +25,7 @@
       2,
       4
     ],
-    "memory_technique": "Tre icone: modulo cartaceo, bilancia (decisione), robot."
+    "memory_technique": "Process Builder = Forms (moduli), Decisions (regole), Bots (automazioni)."
   },
   {
     "id": 3,
@@ -37,7 +37,7 @@
       "A platform for purchasing SAP licenses"
     ],
     "correct": 2,
-    "memory_technique": "Store = vende cose."
+    "memory_technique": "Store dove i partner SAP vendono contenuti (come un marketplace)."
   },
   {
     "id": 4,
@@ -64,7 +64,7 @@
       1,
       3
     ],
-    "memory_technique": "Chiave OAuth che apre una porta dopo aver letto la mappa JSON."
+    "memory_technique": "Due passi: 1) Scarica il file JSON, 2) Configura OAuth per autenticarti."
   },
   {
     "id": 6,
@@ -92,7 +92,7 @@
       2,
       3
     ],
-    "memory_technique": "Cassetta attrezzi standard, orologio in tempo reale, stretta di mano collaborativa."
+    "memory_technique": "BPM = Tools standardizzati + Real-time + Collaborazione (no lavoro amministrativo!)."
   },
   {
     "id": 8,
@@ -136,7 +136,7 @@
       2,
       4
     ],
-    "memory_technique": "Ingranaggio (efficienza), binocolo (visibilitÃ ), rete (collaborazione)."
+    "memory_technique": "Benefici: Efficienza + Visibilità su failures + Collaborazione tra business."
   },
   {
     "id": 11,
@@ -189,8 +189,8 @@
       "Creation of custom content without pre-configuration",
       "Automatic implementation of SAP modules"
     ],
-    "correct": 1,
-    "memory_technique": "Robot che consegna moduli SAP gratuiti."
+    "correct": 0,
+    "memory_technique": "Tre parole chiave: Import facile + Personalizza + Attiva."
   },
   {
     "id": 15,
@@ -286,7 +286,7 @@
       2,
       4
     ],
-    "memory_technique": "Lista regole, scatola pre-costruita, guardrail sulla strada."
+    "memory_technique": "Governance = Eligibility rules + Prebuilt content + Security guardrails."
   },
   {
     "id": 23,
@@ -380,10 +380,10 @@
     ],
     "correct": [
       0,
-      1,
-      2
+      2,
+      4
     ],
-    "memory_technique": "Tre icone: chat, fogli, pagine."
+    "memory_technique": "Forum per discutere, Workpages per collaborare, Applications per lavorare."
   },
   {
     "id": 30,
@@ -439,8 +439,8 @@
       "In the central Content Manager",
       "In the Knowledge Base feature of each workspace"
     ],
-    "correct": 0,
-    "memory_technique": "Archivio centrale come cuore dell'azienda."
+    "correct": 3,
+    "memory_technique": "Ogni workspace ha la sua Knowledge Base (decentralizzato, non centrale)."
   },
   {
     "id": 34,
@@ -533,7 +533,7 @@
       1,
       2
     ],
-    "memory_technique": "Scrivania personale e workspace."
+    "memory_technique": "My Workspace (personale) e Workspace (condiviso) per condividere feed."
   },
   {
     "id": 41,
@@ -580,8 +580,8 @@
       "Reference types",
       "Complex types"
     ],
-    "correct": 1,
-    "memory_technique": "Il colore Ã¨ semplice da scegliere."
+    "correct": 0,
+    "memory_technique": "Color = testo con formato specifico (es: #FF0000)."
   },
   {
     "id": 45,
@@ -596,9 +596,9 @@
     "correct": [
       0,
       1,
-      4
+      2
     ],
-    "memory_technique": "Tre blocchi: dati, componenti visivi, funzioni flusso."
+    "memory_technique": "Marketplace ha: Data, View components, Integration (non Security o Flow)."
   },
   {
     "id": 46,
@@ -654,7 +654,7 @@
       1,
       3
     ],
-    "memory_technique": "Valori nulli, vuoti o zero = empty."
+    "memory_technique": "IS_EMPTY = true per NAN (not a number), 0 (zero), e \"\" (stringa vuota)."
   },
   {
     "id": 50,
@@ -667,11 +667,11 @@
       "Row"
     ],
     "correct": [
-      0,
       2,
+      3,
       4
     ],
-    "memory_technique": "Elementi base per griglie: divisore, contenitore, riga."
+    "memory_technique": "Layout = Container (scatola), Scroll View (scorri), Row (riga)."
   },
   {
     "id": 51,
@@ -785,9 +785,9 @@
     ],
     "correct": [
       0,
-      2
+      3
     ],
-    "memory_technique": "Due stili classici: OData e REST."
+    "memory_technique": "Classici del passato: OData (SAP standard) e SOAP (vecchio protocollo)."
   },
   {
     "id": 59,
