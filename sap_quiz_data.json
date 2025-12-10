@@ -1,815 +1,972 @@
 [
   {
     "id": 1,
-    "question": "When using Actions projects, why must you create a Destination?",
+    "question": "You are tasked with developing a simple end-to-end application with data persistency in SAP HANA Cloud and with SAP Fiori as the user frontend, to perform CRUD operations. According to the programming model's golden path, which activities are mandatory when building such applications? (Select 3)",
     "options": [
-      "To define the technical address of the remote system",
-      "To obfuscate API endpoint details from unauthorized users",
-      "To limit the API calls made by Actions projects"
+      "Reuse existing services",
+      "Define services",
+      "Add the SAP Fiori UI",
+      "Define the data model",
+      "Add custom logic"
     ],
-    "correct": 0,
-    "memory_technique": "Visualizza una destinazione su una mappa GPS: senza l'indirizzo tecnico, non sai dove andare."
+    "correct": [1, 2, 3],
+    "memory_technique": "Golden path = servizio + UI + modello dati."
   },
   {
     "id": 2,
-    "question": "Which functionality does the Process Builder tool in SAP Build Process Automation support? (Select 3)",
+    "question": "What does SAP Fiori elements use to generate the UI? (Select 2)",
     "options": [
-      "Writing code manually to create processes",
-      "Creation and use of forms and approval forms",
-      "Building decisions or business rules",
-      "Building CI/CD pipelines",
-      "Construction of automations and bots"
+      "Custom UI logic",
+      "Annotations in the OData service",
+      "The entity definition of the OData service",
+      "Authorizations in the OData service"
     ],
-    "correct": [
-      1,
-      2,
-      4
-    ],
-    "memory_technique": "Process Builder = Forms (moduli), Decisions (regole), Bots (automazioni)."
+    "correct": [1, 2],
+    "memory_technique": "Fiori elements = annotazioni + entità OData."
   },
   {
     "id": 3,
-    "question": "What is the SAP Build Process Automation Store?",
+    "question": "Which of the following tools are required to build Spring Boot applications using the SAP Cloud SDK? (Select 2)",
     "options": [
-      "A place to which users can upload their own automations",
-      "A place that offers prebuilt content free of charge",
-      "A place for SAP partners to sell content",
-      "A platform for purchasing SAP licenses"
+      "Java SE Development Kit 8",
+      "Apache Maven version 3.5 or above",
+      "SAP Mobile Services (MDK)",
+      "Spring Initializr"
     ],
-    "correct": 2,
-    "memory_technique": "Store dove i partner SAP vendono contenuti (come un marketplace)."
+    "correct": [0, 1],
+    "memory_technique": "Spring Boot SDK = Java + Maven."
   },
   {
     "id": 4,
-    "question": "In SAP Build process automation, which file extension is assigned to exported projects?",
+    "question": "Which method can you use to collect error messages with high severity and return them to the caller in the request-response?",
     "options": [
-      ".mtar",
-      ".proj",
-      ".zip",
-      ".exp"
+      "req.reply",
+      "req.notify",
+      "req.reject",
+      "req.error"
     ],
-    "correct": 0,
-    "memory_technique": "'Modular tarball' (mtar): scatola con etichetta MTAR."
+    "correct": 3,
+    "memory_technique": "Errore grave → req.error."
   },
   {
     "id": 5,
-    "question": "What must you do to configure an Actions project for an SAP S/4HANA API? (Select 2)",
+    "question": "In SAP Build Process Automation, what is a decision table rule?",
     "options": [
-      "Assign descriptive names to API endpoints",
-      "Configure OAuth authentication for API access",
-      "Upload the JSON file into the Actions project",
-      "Download the API specification JSON file"
+      "A tabular set of input/output rule expressions",
+      "A set of pre-defined data objects",
+      "A tabular set of business process decisions",
+      "A set of rule expressions in an IF-THEN format"
     ],
-    "correct": [
-      1,
-      3
-    ],
-    "memory_technique": "Due passi: 1) Scarica il file JSON, 2) Configura OAuth per autenticarti."
+    "correct": 0,
+    "memory_technique": "Decision table = tabella input/output."
   },
   {
     "id": 6,
-    "question": "What is the purpose of encapsulating APIs in Actions projects?",
+    "question": "Which sequence of steps do you follow when working with files locally in Git in SAP Business Application Studio?",
     "options": [
-      "To access API endpoints",
-      "To limit the accessibility of APIs across different projects",
-      "To expose APIs without filtering"
+      "Stage → Create, modify, save → Commit → Check out",
+      "Stage → Create, modify, save → Check out → Commit",
+      "Stage → Commit → Create, modify, save",
+      "Stage → Check out → Commit"
     ],
-    "correct": 1,
-    "memory_technique": "Capsula protettiva che limita l'accesso."
+    "correct": 2,
+    "memory_technique": "Git BAS = Stage → Commit → Save."
   },
   {
     "id": 7,
-    "question": "What are core elements of a Business Process Management (BPM) system? (Select 3)",
+    "question": "Which language do you use to create a data model in a CAP project?",
     "options": [
-      "Standardized tools to manage processes",
-      "Faster identification of breakdowns and processes",
-      "Real-time process execution and measurement",
-      "Improved collaboration between departments",
-      "Increased administrative work"
+      "Core Data Services Definition Language (CDL)",
+      "ABAP",
+      "Core Data Services Query Language (CQL)",
+      "SQL"
     ],
-    "correct": [
-      0,
-      2,
-      3
-    ],
-    "memory_technique": "BPM = Tools standardizzati + Real-time + Collaborazione (no lavoro amministrativo!)."
+    "correct": 0,
+    "memory_technique": "CAP data model = CDL."
   },
   {
     "id": 8,
-    "question": "In SAP Build Process Automation, what are some characteristics of Actions projects? (Select 2)",
+    "question": "With respect to the Flow principle of DevOps, which are flow inhibitors? (Select 3)",
     "options": [
-      "They encapsulate APIs from various systems",
-      "They support versioning",
-      "They are used for direct API integrations",
-      "They are limited to SAP systems APIs"
+      "Manual testing of software",
+      "Manually created software environment",
+      "Source code management tool",
+      "Manually coded user interfaces",
+      "Overly tight architectures on a technical level"
     ],
-    "correct": [
-      0,
-      1
-    ],
-    "memory_technique": "Capsula con diverse API colorate ed etichette di versione."
+    "correct": [0, 1, 3],
+    "memory_technique": "Flow inhibitors = attività manuali + UI manuale."
   },
   {
     "id": 9,
-    "question": "Interacting with SAP Build Process Automation APIs, what does a REST API client do?",
+    "question": "Which error is thrown by the CAP SDK for Node.js, when a CRUD operation violates the foreign key constraints?",
     "options": [
-      "It simplifies technical communication",
-      "It automates process workflows",
-      "It provides visual representations of API responses",
-      "It ensures data encryption during API transactions"
+      "FOREIGN_KEY_VIOLATION",
+      "CX_SY_CONSTRAINT_VIOLATION",
+      "ILLEGAL CRUD OPERATION",
+      "UNIQUE CONSTRAINT_VIOLATION"
     ],
     "correct": 0,
-    "memory_technique": "Un traduttore simultaneo tra sistemi."
+    "memory_technique": "Foreign key → FOREIGN_KEY_VIOLATION."
   },
   {
     "id": 10,
-    "question": "What are some benefits of using SAP Build Process Automation? (Select 3)",
+    "question": "What is a necessary step to implement a custom error handler in the CAP SDK for Node.js?",
     "options": [
-      "Increased organizational efficiency",
-      "Enhanced monitoring of authorizations",
-      "Increased visibility into process breakdowns and failures",
-      "Enhanced visibility into organizational activity",
-      "Improved communication and collaboration across lines of business"
-    ],
-    "correct": [
-      0,
-      2,
-      4
-    ],
-    "memory_technique": "Benefici: Efficienza + Visibilità su failures + Collaborazione tra business."
-  },
-  {
-    "id": 11,
-    "question": "What are some benefits of using Process Variants in SAP Build Process Automation? (Select 2)",
-    "options": [
-      "Processes follow the same template without changes and exceptions",
-      "The complexity of underlying processes is hidden",
-      "Processes can be adapted to changing business requirements without coding",
-      "SAP Build applications are updated automatically"
-    ],
-    "correct": [
-      1,
-      2
-    ],
-    "memory_technique": "Pannello che nasconde complessitÃ  e leva che adatta rapidamente."
-  },
-  {
-    "id": 12,
-    "question": "How can you create a new Process Variant in Live Process Content? (Select 2)",
-    "options": [
-      "By manually adjusting backend database entries",
-      "By using the Process Variant Editor to modify preconfigured variants",
-      "By downloading additional process components from the SAP Store",
-      "By using the process editor to drag and drop process steps from the process template"
-    ],
-    "correct": [
-      1,
-      3
-    ],
-    "memory_technique": "Puzzle: sposti e modifichi i pezzi con un editor."
-  },
-  {
-    "id": 13,
-    "question": "Using SAP Build Process Automation, what is the purpose of deploying a business process project?",
-    "options": [
-      "To create a version of the project",
-      "To edit the project",
-      "To make the project available for others to use",
-      "To release the project"
+      "Register the error handler function for the before phase of the error",
+      "Catch exceptions during a CRUD operation",
+      "Register the error handler function for the on phase of the error",
+      "Write a custom Node.js package"
     ],
     "correct": 2,
-    "memory_technique": "Bacheca pubblica dove tutti vedono il progetto."
+    "memory_technique": "Custom error handler → fase 'on'."
   },
   {
-    "id": 14,
-    "question": "What advantage does using Live Process Content offer?",
-    "options": [
-      "Easy import, customization, and activation of content",
-      "Free provisioning of SAP modules",
-      "Creation of custom content without pre-configuration",
-      "Automatic implementation of SAP modules"
-    ],
-    "correct": 0,
-    "memory_technique": "Tre parole chiave: Import facile + Personalizza + Attiva."
-  },
-  {
-    "id": 15,
-    "question": "What is a process variant in Live Process Content?",
-    "options": [
-      "A process flow to map business rules",
-      "A specific configuration of a process template",
-      "A temporary file for testing purposes"
-    ],
-    "correct": 1,
-    "memory_technique": "Torta base con diversi 'gusti' (varianti)."
-  },
-  {
-    "id": 16,
-    "question": "How does SAP Build Process Automation interact with SAP S/4HANA systems?",
-    "options": [
-      "By replacing APIs with proprietary protocols",
-      "By providing Actions projects for encapsulating API endpoints",
-      "By integrating directly with SAP GUI for seamless data exchange"
-    ],
-    "correct": 1,
-    "memory_technique": "Capsule che fanno da ponte tra sistemi."
-  },
-  {
-    "id": 17,
-    "question": "What does a typical Live Process Content package include?",
-    "options": [
-      "Live Process configurations",
-      "A Process Template, Decisions, and a Visibility Scenario",
-      "Instructions for configuring SAP S/4HANA"
-    ],
-    "correct": 1,
-    "memory_technique": "Kit con schema, giudice (decisione), binocolo (visibilitÃ )."
-  },
-  {
-    "id": 18,
-    "question": "Why does SAP recommend IT governance for citizen development?",
-    "options": [
-      "To ensure applications are secure, scalable, and compliant with corporate standards",
-      "To centralize control and decision making within low-code development",
-      "To exercise financial control over all software development projects"
-    ],
-    "correct": 0,
-    "memory_technique": "Lucchetto che protegge la crescita sicura."
-  },
-  {
-    "id": 19,
-    "question": "What can citizen developers do with SAP Build?",
-    "options": [
-      "Build integration flows",
-      "Work on backend systems and server management",
-      "Build applications and automate processes",
-      "Configure role collections"
-    ],
-    "correct": 2,
-    "memory_technique": "Costruttore con casco che automatizza una catena di montaggio."
-  },
-  {
-    "id": 20,
-    "question": "What does the 'Process' component of the Governance Triad involve?",
-    "options": [
-      "Develop marketing strategies",
-      "Procure hardware",
-      "Create an IT trust blueprint",
-      "Set up financial guidelines for project budgeting"
-    ],
-    "correct": 2,
-    "memory_technique": "Piano architettonico con scritta 'fiducia IT'."
-  },
-  {
-    "id": 21,
-    "question": "What is the purpose of the prebuilt Digital Center of Excellence Toolkit for SAP Build?",
-    "options": [
-      "To provide professional developers with coding templates",
-      "To enforce low-code coding standards",
-      "To help IT administrators manage and collaborate with citizen developers"
-    ],
-    "correct": 2,
-    "memory_technique": "Amministratore che collabora con un gruppo eterogeneo."
-  },
-  {
-    "id": 22,
-    "question": "Which governance capabilities does SAP Build offer? (Select 3)",
-    "options": [
-      "Limit the development to predefined templates",
-      "Establish eligibility rules for citizen developers",
-      "Provide prebuilt artifacts and use case content packages",
-      "Integrate CI/CD into development processes",
-      "Implement guardrails with built-in security"
-    ],
-    "correct": [
-      1,
-      2,
-      4
-    ],
-    "memory_technique": "Governance = Eligibility rules + Prebuilt content + Security guardrails."
-  },
-  {
-    "id": 23,
-    "question": "Which role is NOT part of the 'People' component of the Governance Triad?",
-    "options": [
-      "External vendors",
-      "IT professionals",
-      "Citizen developers"
-    ],
-    "correct": 0,
-    "memory_technique": "Figura esterna fuori dalla 'triade'."
-  },
-  {
-    "id": 24,
-    "question": "What are potential disadvantages of shadow IT in low-code development projects? (Select 2)",
-    "options": [
-      "Compliance issues",
-      "Faster implementation",
-      "Higher autonomy of low-code developers",
-      "Security risks"
-    ],
-    "correct": [
-      0,
-      3
-    ],
-    "memory_technique": "Avviso rosso 'non conforme' e lucchetto rotto."
-  },
-  {
-    "id": 25,
-    "question": "What does the 'Tools and Technologies' component of the Governance Triad include? (Select 2)",
-    "options": [
-      "Set up low-code/no-code platforms",
-      "Establish physical IT infrastructure",
-      "Adopt extensible DevOps practices",
-      "Manage access and authorization"
-    ],
-    "correct": [
-      0,
-      2
-    ],
-    "memory_technique": "Piattaforma LC/NC con badge DevOps."
-  },
-  {
-    "id": 26,
-    "question": "Which of the following aspects are specific to the advanced edition of SAP Build Work Zone? (Select 2)",
-    "options": [
-      "Integrating SAP and third party business content",
-      "Blending of business data and unstructured content",
-      "Empowering end users to create content",
-      "Unifying access to SAP business applications"
-    ],
-    "correct": [
-      0,
-      1
-    ],
-    "memory_technique": "Unire due loghi (SAP + terzi) in un mixer."
-  },
-  {
-    "id": 27,
-    "question": "What mechanism is typically used to integrate applications from SAP S/4HANA into SAP Build Work Zone?",
-    "options": [
-      "Export/Import",
-      "SAP BTP",
-      "Content Federation",
-      "SAP Business Application Studio"
-    ],
-    "correct": 2,
-    "memory_technique": "Federazione di contenuti come bandiera con loghi multipli."
-  },
-  {
-    "id": 28,
-    "question": "Which tool can you use to add business apps to the Applications menu?",
-    "options": [
-      "Work Zone Configurator",
-      "Content Manager",
-      "Channel Manager",
-      "Administration Console"
-    ],
-    "correct": 1,
-    "memory_technique": "Manager che aggiunge app a una lista."
-  },
-  {
-    "id": 29,
-    "question": "Which of the following features can you enable as tabs in a workspace navigation bar? (Select 3)",
-    "options": [
-      "Forums",
-      "Content",
-      "Workpages",
-      "Messages",
-      "Applications"
-    ],
-    "correct": [
-      0,
-      2,
-      4
-    ],
-    "memory_technique": "Forum per discutere, Workpages per collaborare, Applications per lavorare."
-  },
-  {
-    "id": 30,
-    "question": "Out of the box, which Microsoft products are integrated with SAP Build Work Zone? (Select 2)",
-    "options": [
-      "Microsoft Teams",
-      "Microsoft Power BI",
-      "Microsoft SharePoint",
-      "Microsoft Excel"
-    ],
-    "correct": [
-      0,
-      2
-    ],
-    "memory_technique": "Icone Teams e SharePoint dentro una scatola regalo."
-  },
-  {
-    "id": 31,
-    "question": "In My Inbox, you can access content from which of the following components? (Select 2)",
-    "options": [
-      "Notifications from other SAP solutions",
-      "Workflows from SAP Build Process Automation",
-      "Notifications from SAP SuccessFactors",
-      "Workflows from SAP Build Work Zone"
-    ],
-    "correct": [
-      0,
-      1
-    ],
-    "memory_technique": "Inbox che raccoglie notifiche e flussi di lavoro."
-  },
-  {
-    "id": 32,
-    "question": "What must you do to configure the Site Menu? (Select 2)",
-    "options": [
-      "Customize layout",
-      "Access the site menu configuration",
-      "Create a custom template",
-      "Edit menu items"
-    ],
-    "correct": [
-      1,
-      3
-    ],
-    "memory_technique": "MenÃ¹ con chiave di accesso e matita per modificare."
-  },
-  {
-    "id": 33,
-    "question": "Where can knowledge base articles be created?",
-    "options": [
-      "In the central Knowledge Base feature",
-      "In My Workspace",
-      "In the central Content Manager",
-      "In the Knowledge Base feature of each workspace"
-    ],
-    "correct": 3,
-    "memory_technique": "Ogni workspace ha la sua Knowledge Base (decentralizzato, non centrale)."
-  },
-  {
-    "id": 34,
-    "question": "What are some reasons companies would create custom mobile apps for SAP Build Work Zone? (Select 2)",
-    "options": [
-      "To integrate with internal tools",
-      "To support Android devices",
-      "To support corporate branding & identity",
-      "To customize UI Cards"
-    ],
-    "correct": [
-      0,
-      2
-    ],
-    "memory_technique": "Icona '+' (integrazione) e logo aziendale su cellulare."
-  },
-  {
-    "id": 35,
-    "question": "In SAP Build Work Zone, what can you use to enable notifications from third party apps?",
-    "options": [
-      "Side-by-side extension",
-      "SAP Mobile Start Configuration",
-      "My Inbox",
-      "Launchpad Plugins"
-    ],
-    "correct": 3,
-    "memory_technique": "Plugin che si inserisce in launchpad con icona notifica."
-  },
-  {
-    "id": 36,
-    "question": "When working with home pages, which of the following aspects need to be considered? (Select 2)",
-    "options": [
-      "Home pages are also workpages available only in the pre-defined 'Home' area of the site menu",
-      "Workpages outside of the menu entry 'Home' are not related to administrative areas",
-      "The editor has different layout options compared to workpages inside workspaces",
-      "Home pages are always shown to all users"
-    ],
-    "correct": [
-      0,
-      2
-    ],
-    "memory_technique": "Etichetta 'Home' esclusiva con editor diverso."
-  },
-  {
-    "id": 37,
-    "question": "Which extensibility option does SAP recommend you use for SAP Build Work Zone?",
-    "options": [
-      "SAP Build Apps",
-      "SAP Integration Suite",
-      "UI Integration Cards",
-      "Cloud Connector to on-premise systems"
-    ],
-    "correct": 2,
-    "memory_technique": "Carte che espandono funzionalitÃ ."
-  },
-  {
-    "id": 38,
-    "question": "Which of the following do you use to integrate third-party apps with SAP Build Work Zone?",
-    "options": [
-      "Digital Workplace Service (DWS) API",
-      "SAP Build Apps Backend Configuration",
-      "SAP BTP Cockpit",
-      "SAP Integration Suite"
-    ],
-    "correct": 0,
-    "memory_technique": "API come ponte con badge DWS."
-  },
-  {
-    "id": 39,
-    "question": "Home pages from which product are included in the site menu 'Home' section after migration?",
-    "options": [
-      "SAP Enterprise Portal",
-      "SAP Jam Collaboration",
-      "SAP SuccessFactors",
-      "SAP Cloud Portal Service"
-    ],
-    "correct": 0,
-    "memory_technique": "Porta (portal) â†’ casa dopo migrazione."
-  },
-  {
-    "id": 40,
-    "question": "Where can users share feed updates including photos, comments, and other status updates with other users? (Select 2)",
-    "options": [
-      "Tools",
-      "My Workspace",
-      "Workspace",
-      "Profile"
-    ],
-    "correct": [
-      1,
-      2
-    ],
-    "memory_technique": "My Workspace (personale) e Workspace (condiviso) per condividere feed."
-  },
-  {
-    "id": 41,
-    "question": "Which pre-defined section of the site menu is used to automatically surface the information from the content manager?",
-    "options": [
-      "Tools",
-      "Applications",
-      "Home",
-      "Workspaces"
-    ],
-    "correct": 2,
-    "memory_technique": "'Casa' dove si ritrova tutto."
-  },
-  {
-    "id": 42,
-    "question": "Which mechanism is used to expose SAP Build Work Zone to an external system?",
-    "options": [
-      "Gather and Track",
-      "Connect and Extend",
-      "Create and Read",
-      "Push and Pull"
-    ],
-    "correct": 1,
-    "memory_technique": "Cavo che connette ed estende."
-  },
-  {
-    "id": 43,
-    "question": "Which function call returns true?",
-    "options": [
-      "IS_EMAIL(@sap.com)",
-      "IS_EMAIL(\"@sap.com\")",
-      "IS_EMAIL(\"test@sap.com\")",
-      "IS_EMAIL(test@sap.com)"
-    ],
-    "correct": 2,
-    "memory_technique": "Solo con testo tra virgolette, @, e dominio valido."
-  },
-  {
-    "id": 44,
-    "question": "In SAP Build Apps, the data type 'Color' is part of which data type group?",
-    "options": [
-      "Text Types with Specific Format",
-      "Simple types",
-      "Reference types",
-      "Complex types"
-    ],
-    "correct": 0,
-    "memory_technique": "Color = testo con formato specifico (es: #FF0000)."
-  },
-  {
-    "id": 45,
-    "question": "Which of the following sections are available in the SAP Build Apps Marketplace? (Select 3)",
-    "options": [
-      "Data",
-      "View components",
-      "Integration",
-      "Security",
-      "Flow functions"
-    ],
-    "correct": [
-      0,
-      1,
-      2
-    ],
-    "memory_technique": "Marketplace ha: Data, View components, Integration (non Security o Flow)."
-  },
-  {
-    "id": 46,
-    "question": "In SAP Build Apps, which of the following can you set in the THEME tab? (Select 2)",
-    "options": [
-      "Fonts",
-      "Visual Cloud Functions",
-      "UI Component Catalog",
-      "Colors"
-    ],
-    "correct": [
-      0,
-      3
-    ],
-    "memory_technique": "Arredare una stanza: tipografia e colore."
-  },
-  {
-    "id": 47,
-    "question": "In SAP Build Apps, which function returns the number of items in a list?",
-    "options": [
-      "COUNT",
-      "LENGTH",
-      "MAX",
-      "SUM"
-    ],
-    "correct": 1,
-    "memory_technique": "La 'lunghezza' di una lista."
-  },
-  {
-    "id": 48,
-    "question": "In SAP Build Apps, where can you configure the visibility of components?",
-    "options": [
-      "Properties tab",
-      "Data tab",
-      "Style tab",
-      "Layout tab"
-    ],
-    "correct": 0,
-    "memory_technique": "ProprietÃ  = controllo visibilitÃ ."
-  },
-  {
-    "id": 49,
-    "question": "In SAP Build Apps, in which of the following cases does the IS_EMPTY function return true? (Select 3)",
-    "options": [
-      "IS_EMPTY(NAN)",
-      "IS_EMPTY(0)",
-      "IS_EMPTY(\"a\")",
-      "IS_EMPTY(\"\")",
-      "IS_EMPTY(0) [duplicate]"
-    ],
-    "correct": [
-      0,
-      1,
-      3
-    ],
-    "memory_technique": "IS_EMPTY = true per NAN (not a number), 0 (zero), e \"\" (stringa vuota)."
-  },
-  {
-    "id": 50,
-    "question": "In SAP Build Apps, which of the following are layout components? (Select 3)",
-    "options": [
-      "List Divider",
-      "Dropdown",
-      "Container",
-      "Scroll View",
-      "Row"
-    ],
-    "correct": [
-      2,
-      3,
-      4
-    ],
-    "memory_technique": "Layout = Container (scatola), Scroll View (scorri), Row (riga)."
-  },
-  {
-    "id": 51,
-    "question": "While creating the collection of data records for a Data variable in SAP Build Apps, which of the following are available? (Select 2)",
-    "options": [
-      "Annotation extensions",
-      "Paging",
-      "User access permissions",
-      "Filter condition"
-    ],
-    "correct": [
-      1,
-      3
-    ],
-    "memory_technique": "Sfoglia pagine e filtra risultati."
-  },
-  {
-    "id": 52,
-    "question": "Which of the following components are available in the Logic Canvas of SAP Build Apps? (Select 2)",
-    "options": [
-      "Input Field",
-      "Card",
-      "Confirm",
-      "Show spinner"
-    ],
-    "correct": [
-      2,
-      3
-    ],
-    "memory_technique": "Conferma (OK) e caricamento (spinner)."
-  },
-  {
-    "id": 53,
-    "question": "In SAP Build Apps, which target platforms can you select when you build applications? (Select 3)",
-    "options": [
-      "Web App",
-      "IOS Mobile/Tablet",
-      "Windows",
-      "MacOS",
-      "Android Mobile/Tablet"
-    ],
-    "correct": [
-      0,
-      1,
-      4
-    ],
-    "memory_technique": "Tutti i device principali, escluso desktop nativi."
-  },
-  {
-    "id": 54,
-    "question": "In SAP Build Apps, which function in the Formula Editor returns the current date?",
-    "options": [
-      "GET_DATETIME_COMPONENT",
-      "FETCH_DATE",
-      "GET_DATE",
-      "NOW"
-    ],
-    "correct": 3,
-    "memory_technique": "'Adesso' = NOW; parola secca e immediata."
-  },
-  {
-    "id": 55,
-    "question": "In SAP Build Apps, which of the following are part of the VARIABLES section of the Logic Canvas? (Select 2)",
-    "options": [
-      "Set Backend Variable",
-      "Set App Variable",
-      "Set User Variable",
-      "Set Page Variable"
-    ],
-    "correct": [
-      1,
-      3
-    ],
-    "memory_technique": "Variabili a livello di applicazione o pagina."
-  },
-  {
-    "id": 56,
-    "question": "Which of the following can you do in the Launch tab of SAP Build Apps? (Select 2)",
-    "options": [
-      "Debug apps",
-      "Preview apps",
-      "Build apps",
-      "Configure destinations"
-    ],
-    "correct": [
-      1,
-      2
-    ],
-    "memory_technique": "Da Launch puoi 'vedere anteprima' e 'costruire'."
-  },
-  {
-    "id": 57,
-    "question": "You want to use a variable value in multiple pages in an SAP Build Apps application. Which variable type can you use?",
-    "options": [
-      "Translation",
-      "Page",
-      "Sensor",
-      "App"
-    ],
-    "correct": 3,
-    "memory_technique": "Variabile globale = app."
-  },
-  {
-    "id": 58,
-    "question": "In SAP Build Apps, what are some classic data entities available? (Select 2)",
-    "options": [
-      "OData Integration",
-      "RFC Integration",
-      "REST API Direct Integration",
-      "SOAP Integration"
-    ],
-    "correct": [
-      0,
-      3
-    ],
-    "memory_technique": "Classici del passato: OData (SAP standard) e SOAP (vecchio protocollo)."
-  },
-  {
-    "id": 59,
-    "question": "In SAP Build Apps, besides data and variables, what else can you use to bind variables and data to components?",
-    "options": [
-      "JavaScript",
-      "Trigger Event",
-      "Formula"
-    ],
-    "correct": 2,
-    "memory_technique": "Lega tutto con una formula matematica."
-  },
-  {
-    "id": 60,
-    "question": "In SAP Build Apps, besides the Variable tab where can you find an overview of created variables?",
-    "options": [
-      "Formula Editor",
-      "Tree View",
-      "Data Tab",
-      "Logic Canvas"
-    ],
-    "correct": 1,
-    "memory_technique": "'Tree View' mostra struttura ad albero di tutte le variabili."
-  }
-]
+      "id": 11,
+      "question": "What can you use to register the JavaScript implementation of an event handler for external services to the framework?",
+      "options": [
+        "An inline function passed to result of cds.connect()",
+        "An inline function passed to result of cds.serve()",
+        "A .js file with the same name as the .cds file",
+        "An @impl annotation in your CDS model file"
+      ],
+      "correct": 0,
+      "memory_technique": "Per servizi esterni → cds.connect."
+    },
+    {
+      "id": 12,
+      "question": "In SAP Build Process Automation, what is a policy?",
+      "options": [
+        "A guide to business process mapping",
+        "A collection of decisions",
+        "A basis for making business rules",
+        "A collection of business rules"
+      ],
+      "correct": 3,
+      "memory_technique": "Policy = insieme di regole."
+    },
+    {
+      "id": 13,
+      "question": "What are some characteristics of YAML files? (Select 2)",
+      "options": [
+        "YAML files can be used as configuration files",
+        "YAML files are also valid JSON files",
+        "YAML files are based on XML",
+        "YAML files rely on correct indentation"
+      ],
+      "correct": [0, 3],
+      "memory_technique": "YAML = config + indentazione."
+    },
+    {
+      "id": 14,
+      "question": "Which of the following are benefits of using the OData Virtual Data Model of the SAP Cloud SDK? (Select 3)",
+      "options": [
+        "Commonly used SQL query technology",
+        "Easy access to create, update, and delete operations",
+        "Type safety for functions",
+        "Auto-completion of function names and properties",
+        "Database procedures provided out of the box"
+      ],
+      "correct": [1, 2, 3],
+      "memory_technique": "OData VDM = CRUD + type safety + auto-complete."
+    },
+    {
+      "id": 15,
+      "question": "What is the prerequisite before you can create a CI/CD job for a project?",
+      "options": [
+        "The project has been shared to a remote Git repository",
+        "The project has been deployed",
+        "The project has been previewed"
+      ],
+      "correct": 0,
+      "memory_technique": "CI/CD → serve repo Git remoto."
+    },
+    {
+      "id": 16,
+      "question": "What are the main features and capabilities of the app router? (Select 3)",
+      "options": [
+        "It can serve static content such as web pages, SAPUI5 or other client side code",
+        "It manages the authentication flows for the application",
+        "It acts as an authorization server",
+        "It downloads all necessary libraries",
+        "It is the central entry point of the application"
+      ],
+      "correct": [0, 1, 4],
+      "memory_technique": "App router = static content + auth + entry point."
+    },
+    {
+      "id": 17,
+      "question": "Your CAP project contains an entity called Books. You want to extend the Books entity with the managed aspect. Which is a valid way?",
+      "options": [
+        "entity Books { ... }",
+        "entity Books : managed { ... }",
+        "aspect managed Books{}",
+        "entity Books { aspect managed; }"
+      ],
+      "correct": 1,
+      "memory_technique": "Estensione CAP → entity Books : managed."
+    },
+    {
+      "id": 18,
+      "question": "You need to secure your application in the Cloud Foundry environment. In which file do you maintain routes during design time?",
+      "options": [
+        "xs-app.json",
+        "mta.yml",
+        "xs-security.json",
+        "manifest.yml"
+      ],
+      "correct": 0,
+      "memory_technique": "Route design-time → xs-app.json."
+    },
+    {
+      "id": 19,
+      "question": "Which actions are executed in Cloud Foundry under the Deploy & Execute phase when you run an application? (Select 2)",
+      "options": [
+        "Fueling generic runtimes to serve recurring tasks automatically",
+        "Integrating the data with other SAP systems",
+        "Declaratively capturing domain knowledge in CDS models",
+        "Maximizing boilerplate code to real custom logic"
+      ],
+      "correct": [0, 1],
+      "memory_technique": "Deploy & Execute = runtime + integrazione SAP."
+    },
+    {
+      "id": 20,
+      "question": "When you create an API Rule for a service, what is created automatically?",
+      "options": [
+        "A Helm Chart",
+        "An Istio VirtualService",
+        "A Kubernetes Deployment",
+        "A Kubernetes Service"
+      ],
+      "correct": 1,
+      "memory_technique": "API Rule → Istio VirtualService."
+    },
+    {
+      "id": 21,
+      "question": "How do you debug a Node.js module in SAP Business Application Studio?",
+      "options": [
+        "Add the sap.hana.xs.debugger: Debugger role to the HDI container's #RT user",
+        "Start the debugger from the CF command line interface and run the program",
+        "Set the enabled parameter to true in the section debugger of the xsengine.ini file",
+        "Attach the debugger to the application"
+      ],
+      "correct": 3,
+      "memory_technique": "Debug BAS → attacca il debugger all’app."
+    },
+    {
+      "id": 22,
+      "question": "You have configured an approuter by creating the xs-app.json file in the approuter folder. What does the routes array tell the approuter? (Select 2)",
+      "options": [
+        "The files requested for /app will be put to the resources folder",
+        "All requests starting with /service will be forwarded to the CAP service",
+        "The files in the resources folder will be served for all requests to /app",
+        "All requests starting with /service will be targeted to the folder resources"
+      ],
+      "correct": [1, 2],
+      "memory_technique": "Routes → /service va al CAP, /app serve risorse."
+    },
+    {
+      "id": 23,
+      "question": "What must you do first before you can get visibility into how a process is running?",
+      "options": [
+        "Save the version of the process you are working on",
+        "Circulate the process for pre-approvals before finalizing it",
+        "Prepare the process to be consumed by the visibility scenario",
+        "Purchase the visibility dashboard capabilities from the SAP store"
+      ],
+      "correct": 2,
+      "memory_technique": "Visibilità → prepara il processo per lo scenario."
+    },
+    {
+      "id": 24,
+      "question": "What is the correct sequence of steps when implementing Tenant-aware Persistence?",
+      "options": [
+        "Configure a data source → Configure Hibernate for multi-tenancy → Persisting and accessing the data → Tenant onboarding and offboarding",
+        "Configure a data source → Configure Hibernate for multi-tenancy → Tenant onboarding and offboarding → Persisting and accessing the data",
+        "Tenant onboarding and offboarding → Configure a data source → Configure Hibernate for multi-tenancy → Persisting and accessing the data",
+        "Configure Hibernate for multi-tenancy → Configure a data source → Tenant onboarding and offboarding → Persisting and accessing the data"
+      ],
+      "correct": 0,
+      "memory_technique": "Tenant persistence → prima datasource, poi Hibernate, poi dati, infine onboarding."
+    },
+    {
+      "id": 25,
+      "question": "Which configuration steps are necessary to set process conditions in SAP Build Process Automation? (Select 3)",
+      "options": [
+        "Define If/Else criteria",
+        "Map condition input to process content",
+        "Add environment variables",
+        "Define flow for different conditional paths",
+        "Add a condition to the process"
+      ],
+      "correct": [0, 3, 4],
+      "memory_technique": "Condizioni = If/Else + flussi + aggiungi condizione."
+    },
+    {
+      "id": 26,
+      "question": "What are tasks of the approuter? (Select 3)",
+      "options": [
+        "Routing requests from the web browser to the provider of the UI service",
+        "Routing requests from the application to the SAP Launchpad service",
+        "Authorizing users for the CAP service and the provider of the UI service",
+        "Routing requests from the web browser to the CAP service",
+        "Forwarding user requests to the XSUAA service for authentication and authorization"
+      ],
+      "correct": [0, 3, 4],
+      "memory_technique": "Approuter = browser→UI, browser→CAP, forward→XSUAA."
+    },
+    {
+      "id": 27,
+      "question": "How do you run a CI/CD build manually without pushing changes to Git?",
+      "options": [
+        "Select Deploy from the project's context menu in the Project Explorer",
+        "Submit Changes via Sync & Share action",
+        "Select 'Trigger a Build' in the CI/CD job's context menu",
+        "Create and run 'Build task' in Task Explorer"
+      ],
+      "correct": 2,
+      "memory_technique": "Build manuale → Trigger a Build."
+    },
+    {
+      "id": 28,
+      "question": "When creating a CI/CD job, what does defining Source Control Management (SCM) credentials enable?",
+      "options": [
+        "Retrieving your project from SCM when its build is triggered",
+        "Managing your SCM credentials",
+        "Modifying your project source code automatically"
+      ],
+      "correct": 0,
+      "memory_technique": "SCM credenziali → recupero progetto."
+    },
+    {
+      "id": 29,
+      "question": "Which of the following are features of Kubernetes? (Select 3)",
+      "options": [
+        "Immutability and self-healing",
+        "Hardware virtualization",
+        "Service Discovery and load balancing",
+        "Operating system management",
+        "Storage orchestration"
+      ],
+      "correct": [0, 2, 4],
+      "memory_technique": "Kubernetes = self-healing + discovery + storage orchestration."
+    },
+    {
+      "id": 30,
+      "question": "You want to implement an event handler to show a console log once a supplier record is read. What is the correct syntax?",
+      "options": [
+        "this.after('each Supplier', row => console.log(...))",
+        "this.on('each', Supplier, row => output.log(...))",
+        "this.on('each, Supplier', row => console.log(...))",
+        "this.after('each Supplier', row => output.log(...))"
+      ],
+      "correct": 0,
+      "memory_technique": "Supplier letto → usa this.after con console.log."
+    },
+    {
+      "id": 31,
+      "question": "What can you define in the application router's design-time descriptor: xs-app.json? (Select 2)",
+      "options": [
+        "role-templates",
+        "routes",
+        "authenticationMethod",
+        "modules"
+      ],
+      "correct": [1, 2],
+      "memory_technique": "xs-app.json → definisci routes e metodo di autenticazione."
+    },
+    {
+      "id": 32,
+      "question": "Which identifier is used by the XSUAA service to distinguish applications and scopes?",
+      "options": [
+        "xsappname",
+        "xs-security",
+        "VCAP_SERVICES",
+        "tenant-mode"
+      ],
+      "correct": 0,
+      "memory_technique": "XSUAA distingue con xsappname."
+    },
+    {
+      "id": 33,
+      "question": "When would you choose SAP Fiori elements for app development? (Select 2)",
+      "options": [
+        "When standard floorplans are sufficient",
+        "When unique floorplans are required",
+        "When flexibility is more important than speed",
+        "When speed is more important than flexibility"
+      ],
+      "correct": [0, 3],
+      "memory_technique": "Fiori elements = standard + velocità."
+    },
+    {
+      "id": 34,
+      "question": "After you create a business process in SAP Build Process Automation by giving it a name and identifier and clicking 'Create,' what can you add to it? (Select 3)",
+      "options": [
+        "Forms",
+        "Decisions",
+        "Packages",
+        "Filters",
+        "Automations"
+      ],
+      "correct": [0, 1, 4],
+      "memory_technique": "Process = Forms + Decisions + Automations."
+    },
+    {
+      "id": 35,
+      "question": "You have deployed a workload through a Kubernetes Deployment to SAP BTP, Kyma runtime. What must you do to expose the workload to the public internet? (Select 3)",
+      "options": [
+        "Add a readiness probe for your workload",
+        "Create an API Rule CR",
+        "Add a custom VirtualService CR to secure the service",
+        "Configure rules and accessStrategies",
+        "Create a service to group your pods"
+      ],
+      "correct": [1, 3, 4],
+      "memory_technique": "Esposizione workload = API Rule + accessStrategies + service."
+    },
+    {
+      "id": 36,
+      "question": "Your company is using the SAP Authorization and Trust Management service in conjunction with the XSUAA service to authorize their applications. Where do you bundle your defined scopes in role-templates?",
+      "options": [
+        "In an xs-security.json file",
+        "In a role-collection",
+        "In an instance of the XSUAA service"
+      ],
+      "correct": 0,
+      "memory_technique": "Scopes → xs-security.json."
+    },
+    {
+      "id": 37,
+      "question": "You have set up the scopes and attributes that are needed to protect your application in the Cloud Foundry environment, but a user is unable to access your application. What might be the reason?",
+      "options": [
+        "Roles aren't assigned to the client application",
+        "Role collections aren't assigned to the user",
+        "Roles aren't assigned to the user",
+        "Role collections aren't assigned to the client application"
+      ],
+      "correct": 1,
+      "memory_technique": "Access negato → manca role collection all’utente."
+    },
+    {
+      "id": 38,
+      "question": "Which property of access control with @restrict accepts all standard CDS CRUD events, as well as action and function names?",
+      "options": [
+        "to",
+        "on",
+        "where",
+        "grant"
+      ],
+      "correct": 1,
+      "memory_technique": "@restrict → proprietà 'on'."
+    },
+    {
+      "id": 39,
+      "question": "What are some benefits of using Forms in SAP Build Process Automation? (Select 2)",
+      "options": [
+        "Streamline business process approvals easily",
+        "Create documents for processes easily",
+        "Create an interactive UI easily",
+        "Create and share email templates easily"
+      ],
+      "correct": [0, 2],
+      "memory_technique": "Forms = approvazioni + UI interattiva."
+    },
+    {
+      "id": 40,
+      "question": "You have developed a CAP project and added the XSUAA security configuration. What information is stored in the xs-security.json file? (Select 2)",
+      "options": [
+        "role-templates",
+        "users",
+        "roles",
+        "scopes"
+      ],
+      "correct": [0, 3],
+      "memory_technique": "xs-security.json = role-templates + scopes."
+    },
+    {
+      "id": 41,
+      "question": "To grant a user access to an application in an SAP BTP subaccount, what must you assign to this user?",
+      "options": [
+        "A role",
+        "A role collection",
+        "A role template"
+      ],
+      "correct": 1,
+      "memory_technique": "Accesso utente → assegna role collection."
+    },
+    {
+      "id": 42,
+      "question": "What are the benefits of using Side-by-Side Extensibility? (Select 3)",
+      "options": [
+        "It can be implemented in the same software stack as the extended application",
+        "It integrates with other cloud/non-cloud solutions when using SAP Business Technology Platform Integration services",
+        "It uses a complete development platform for creating extension applications",
+        "It provides support for hybrid scenarios",
+        "It uses In-App tools to adapt the standard UI"
+      ],
+      "correct": [1, 2, 3],
+      "memory_technique": "Side-by-Side = integrazione + piattaforma completa + supporto ibrido."
+    },
+    {
+      "id": 43,
+      "question": "You want a service to react to a specific event. What can you specify as <phase> in the statement srv.<phase>(<event>)? (Select 2)",
+      "options": [
+        "end",
+        "begin",
+        "after",
+        "before"
+      ],
+      "correct": [2, 3],
+      "memory_technique": "Eventi CAP → phase = before o after."
+    },
+    {
+      "id": 44,
+      "question": "You develop custom SAP S/4HANA side-by-side extensions. For which development objects can you enable OData services? (Select 2)",
+      "options": [
+        "SAP-delivered business objects",
+        "Custom CDS views",
+        "Custom forms",
+        "Custom business objects"
+      ],
+      "correct": [0, 1],
+      "memory_technique": "OData → business objects SAP + CDS views."
+    },
+    {
+      "id": 45,
+      "question": "Your customer presents you with the following UI requirements: small set of items, multiple views, one kind of data visualization. Which SAP Fiori elements floorplan do you recommend?",
+      "options": [
+        "Object page",
+        "List report",
+        "Analytical list page",
+        "Worklist"
+      ],
+      "correct": 3,
+      "memory_technique": "Piccolo set di item → Worklist."
+    },
+    {
+      "id": 46,
+      "question": "What are some benefits of using the Istio service mesh in SAP BTP, Kyma runtime? (Select 3)",
+      "options": [
+        "Traffic management between services can be controlled",
+        "Distributed tracing can be used to trace request flows",
+        "Networking is decoupled from the application logic",
+        "Mutual TLS is supported for service-to-service communication",
+        "Networking is coupled to the application logic"
+      ],
+      "correct": [0, 1, 2],
+      "memory_technique": "Istio = traffico, tracing, decoupling."
+    },
+    {
+      "id": 47,
+      "question": "You have set up a pipeline in the SAP Continuous Integration and Delivery service with automated deployment. A build was initiated and failed. What do you check to find out which step of the pipeline failed?",
+      "options": [
+        "The webhook event receiver",
+        "The webhook of your version control system",
+        "The stages in the config.yml in the pipeline folder",
+        "The stages of the failed job run"
+      ],
+      "correct": 3,
+      "memory_technique": "Pipeline fallita → controlla stages del job run."
+    },
+    {
+      "id": 48,
+      "question": "What do you use to update the Git history of the local file you are working on?",
+      "options": [
+        "Save",
+        "Commit",
+        "Stage",
+        "Check out"
+      ],
+      "correct": 1,
+      "memory_technique": "Git history → Commit."
+    },
+    {
+      "id": 49,
+      "question": "How can you ensure that the value creation process continuously becomes safer and more resilient?",
+      "options": [
+        "Establish short and efficient feedback cycles",
+        "Develop tight software architectures",
+        "Optimize batch working style",
+        "Apply strict top-down software design"
+      ],
+      "correct": 0,
+      "memory_technique": "Resilienza → cicli di feedback brevi."
+    },
+    {
+      "id": 50,
+      "question": "What are key elements of reactive systems in the distributed environment of side-by-side extensions? (Select 2)",
+      "options": [
+        "Asynchronous interaction between a browser and a system",
+        "Asynchronous message-driven communication between systems",
+        "Loose coupling and isolation between systems",
+        "Synchronous API communication between server and client"
+      ],
+      "correct": [1, 2],
+      "memory_technique": "Reactive = messaggi asincroni + loose coupling."
+    },
+    {
+      "id": 51,
+      "question": "Which of the following can be used to implement side-by-side extensions in the Cloud Foundry environment of SAP Business Technology Platform? (Select 2)",
+      "options": [
+        "ABAP",
+        "Java",
+        "Node.js",
+        "ActionScript"
+      ],
+      "correct": [1, 2],
+      "memory_technique": "Side-by-side CF → Java e Node.js."
+    },
+    {
+      "id": 52,
+      "question": "Which are characteristics of Continuous Delivery? (Select 3)",
+      "options": [
+        "No ambiguity in long term plans",
+        "Fast recovery from defects",
+        "Waterfall model",
+        "Short release cycle",
+        "High degree of automation"
+      ],
+      "correct": [1, 3, 4],
+      "memory_technique": "CD = recovery veloce + cicli brevi + automazione."
+    },
+    {
+      "id": 53,
+      "question": "According to SAP CAP best practices, which error types should you NOT catch? (Select 2)",
+      "options": [
+        "Programming errors",
+        "Rejections of promises",
+        "Runtime errors",
+        "Unexpected errors"
+      ],
+      "correct": [1, 3],
+      "memory_technique": "Non catturare → promise rejected + errori inattesi."
+    },
+    {
+      "id": 54,
+      "question": "During application development, what are some principles of dealing with application errors? (Select 2)",
+      "options": [
+        "Use try/catch blocks sparingly",
+        "Hide errors and continue silently",
+        "Use as many try/catch blocks as possible",
+        "Log unexpected errors"
+      ],
+      "correct": [0, 3],
+      "memory_technique": "Errori → pochi try/catch + log imprevisti."
+    },
+    {
+      "id": 55,
+      "question": "What must you do to pull a container image from a private registry? (Select 2)",
+      "options": [
+        "Create a secret with the type 'kubernetes.io/dockerconfigjson'",
+        "Create a secret with the type 'Opaque'",
+        "Provide credentials in the pod manifest via 'imagePullSecrets' in spec.template.metadata.annotations",
+        "Provide credentials in the pod manifest via 'imagePullSecrets' in spec.template.spec"
+      ],
+      "correct": [0, 3],
+      "memory_technique": "Private registry → secret dockerconfigjson + imagePullSecrets in spec."
+    },
+    {
+      "id": 56,
+      "question": "What are some characteristics of CAP event handling? (Select 2)",
+      "options": [
+        "You can register only one event handler for a specific event",
+        "You must use srv.emit(<event>) to de-register event handlers",
+        "You can register multiple event handlers for each event phase",
+        "You can register event handlers with instances of cds.service to add custom logic"
+      ],
+      "correct": [2, 3],
+      "memory_technique": "CAP events → multipli handler + cds.service."
+    },
+    {
+      "id": 57,
+      "question": "What are some of the capabilities of the SAP S/4HANA Virtual Data Model? (Select 2)",
+      "options": [
+        "It documents the relationships between entities",
+        "It allows direct access to underlying database tables",
+        "It provides a native UI to query the database tables",
+        "It enriches the entities with business semantics"
+      ],
+      "correct": [0, 3],
+      "memory_technique": "VDM = relazioni + semantica business."
+    },
+    {
+      "id": 58,
+      "question": "Which of the following are use cases for SAP Business Technology Platform? (Select 3)",
+      "options": [
+        "Integrate apps, data, and processes",
+        "Build innovative digital apps",
+        "Extend cloud and on-premise apps",
+        "Build tightly coupled applications",
+        "Supports only Cloud scenarios with seamless interoperability with hyperscalers"
+      ],
+      "correct": [0, 1, 2],
+      "memory_technique": "BTP = integra + costruisci + estendi."
+    },
+    {
+      "id": 59,
+      "question": "You want to register custom event handlers using instances of CAP Node.js SDK classes. Which one do you use?",
+      "options": [
+        "cds.Service",
+        "cds.Request",
+        "cds.Event"
+      ],
+      "correct": 0,
+      "memory_technique": "Custom handler → cds.Service."
+    },
+    {
+      "id": 60,
+      "question": "You develop an application using the Cloud Foundry environment. What are some steps to restrict access to this application? (Select 2)",
+      "options": [
+        "Set the Scopes element to the required scope name in the xs-app.json file",
+        "Set the role-name attribute of the Security-role element in the web.xml file to the required role template name",
+        "Define the role template name in the role-templates element of the xs-security.json file",
+        "Set the Scopes element to the required scope name in the xs-security.json file"
+      ],
+      "correct": [2, 3],
+      "memory_technique": "Restrict access → role-templates + scopes in xs-security.json."
+    },
+    {
+      "id": 61,
+      "question": "Which formats are supported by OData? (Select 2)",
+      "options": [
+        "JSON",
+        "XML-based AtomPub",
+        "YAML",
+        "XHTML"
+      ],
+      "correct": [0, 1],
+      "memory_technique": "OData → JSON e XML AtomPub."
+    },
+    {
+      "id": 62,
+      "question": "Which of the following are the fundamental guidelines of a twelve-factor application? (Select 3)",
+      "options": [
+        "Cache management",
+        "Traceability and reproducibility of all changes",
+        "Security management of software layers",
+        "Stateless and self-contained application processes",
+        "Separation of application code and runtime configuration"
+      ],
+      "correct": [1, 3, 4],
+      "memory_technique": "12-factor = tracciabilità + stateless + separazione codice/config."
+    },
+    {
+      "id": 63,
+      "question": "What are some characteristics of logic flows? (Select 3)",
+      "options": [
+        "They are a sequence of events, actions, and functions",
+        "They can be used to customize any kind of behavior in an app",
+        "They first need to be modelled in Excel to ensure there is a result",
+        "They always require a decision loop",
+        "They can be simple or branching"
+      ],
+      "correct": [0, 1, 4],
+      "memory_technique": "Logic flow = sequenza + personalizzazione + semplice/ramificato."
+    },
+    {
+      "id": 64,
+      "question": "What are some scenarios where you would use the SAP Cloud SDK in your application? (Select 2)",
+      "options": [
+        "You want to allow key users to create fields",
+        "You need advanced features in your app such as resilience and caching",
+        "You want to add new features to an existing Java application",
+        "You want to build extensions using .NET"
+      ],
+      "correct": [1, 2],
+      "memory_technique": "Cloud SDK = resilienza/caching + estensioni Java."
+    },
+    {
+      "id": 65,
+      "question": "Why are extensions on top of SAP S/4HANA Cloud NOT affected by the quarterly update cycle?",
+      "options": [
+        "The Virtual Data Model of SAP S/4HANA Cloud remains unchanged",
+        "The extension application runs only on SAP Business Technology Platform",
+        "The public interfaces of SAP S/4HANA represent a stable contract across versions",
+        "SAP provides maintenance agreements to fix any extension issues"
+      ],
+      "correct": 2,
+      "memory_technique": "Stabilità → interfacce pubbliche sono contratto stabile."
+    },
+    {
+      "id": 66,
+      "question": "What are some prerequisites for functions to receive events from Kyma Eventing? (Select 2)",
+      "options": [
+        "An API Rule with Oathkeeper AccessRules for GET-Requests",
+        "The request to the function contains the event context",
+        "A Subscription CR",
+        "A CloudEvents specification"
+      ],
+      "correct": [2, 3],
+      "memory_technique": "Kyma Eventing → Subscription CR + CloudEvents."
+    },
+    {
+      "id": 67,
+      "question": "What feature of the pre-built content packages in SAP Build Process Automation increases the speed of development? (Select 2)",
+      "options": [
+        "Templated automations",
+        "Predetermined decisions",
+        "Enhanced user interface",
+        "Plug-and-play availability"
+      ],
+      "correct": [0, 3],
+      "memory_technique": "Pacchetti prebuilt = automazioni template + plug-and-play."
+    },
+    {
+      "id": 68,
+      "question": "You want to create a new service definition in your CAP project. In which folder do you place the service definition .cds file?",
+      "options": [
+        "/root",
+        "/srv",
+        "/app",
+        "/db"
+      ],
+      "correct": 1,
+      "memory_technique": "Service definition → cartella /srv."
+    },
+    {
+      "id": 69,
+      "question": "What are some principles of continuous integration? (Select 2)",
+      "options": [
+        "Automated tests",
+        "Automated deployment to the productive system",
+        "Automated builds",
+        "Automated code change pushes"
+      ],
+      "correct": [0, 2],
+      "memory_technique": "CI = test automatici + build automatici."
+    },
+    {
+      "id": 70,
+      "question": "You initialize a new CAP project with initial project structure using a generator in SAP Business Application Studio. What are the initial folders created?",
+      "options": [
+        "/app, /db, /srv",
+        "/root, /srv, /config",
+        "/db, /srv, /node_modules",
+        "/app, /srv, /config"
+      ],
+      "correct": 0,
+      "memory_technique": "CAP init → cartelle app, db, srv."
+    },
+    {
+      "id": 71,
+      "question": "Which SAP Fiori elements floorplan is recommended when users need to work with a large set of items and need multiple views and analytical capabilities?",
+      "options": [
+        "Object page",
+        "List report",
+        "Analytical list page",
+        "Worklist"
+      ],
+      "correct": 2,
+      "memory_technique": "Molti dati + analisi → Analytical list page."
+    },
+    {
+      "id": 72,
+      "question": "Which file defines the modules, resources, and parameters of a multi-target application (MTA) in SAP BTP?",
+      "options": [
+        "manifest.yml",
+        "xs-app.json",
+        "mta.yml",
+        "xs-security.json"
+      ],
+      "correct": 2,
+      "memory_technique": "MTA → definito in mta.yml."
+    },
+    {
+      "id": 73,
+      "question": "Which CAP feature allows you to enrich entities with business semantics and annotations?",
+      "options": [
+        "Managed aspects",
+        "Virtual Data Model",
+        "Annotations",
+        "Event handlers"
+      ],
+      "correct": 2,
+      "memory_technique": "Arricchire entità → annotazioni."
+    },
+    {
+      "id": 74,
+      "question": "Which SAP BTP service provides identity management and authentication for applications?",
+      "options": [
+        "SAP Identity Authentication Service (IAS)",
+        "SAP Business Application Studio",
+        "SAP Cloud SDK",
+        "SAP Build Process Automation"
+      ],
+      "correct": 0,
+      "memory_technique": "Autenticazione → IAS."
+    },
+    {
+      "id": 75,
+      "question": "Which DevOps principle emphasizes fast feedback and learning cycles?",
+      "options": [
+        "Flow",
+        "Feedback",
+        "Continuous Delivery",
+        "Resilience"
+      ],
+      "correct": 1,
+      "memory_technique": "DevOps → principio Feedback = cicli rapidi."
+    },
+    {
+      "id": 76,
+      "question": "Which SAP BTP runtime environment is based on Kubernetes?",
+      "options": [
+        "Cloud Foundry",
+        "Kyma",
+        "Neo",
+        "ABAP Environment"
+      ],
+      "correct": 1,
+      "memory_technique": "Runtime Kubernetes → Kyma."
+    },
+    {
+      "id": 77,
+      "question": "Which CAP file extension is used for defining data models?",
+      "options": [
+        ".js",
+        ".cds",
+        ".yaml",
+        ".json"
+      ],
+      "correct": 1,
+      "memory_technique": "Data model CAP → file .cds."
+    },
+    {
+      "id": 78,
+      "question": "Which SAP BTP service enables integration scenarios across cloud and on-premise systems?",
+      "options": [
+        "SAP Integration Suite",
+        "SAP Build Work Zone",
+        "SAP Cloud SDK",
+        "SAP Business Application Studio"
+      ],
+      "correct": 0,
+      "memory_technique": "Integrazione → Integration Suite."
+    },
+    {
+      "id": 79,
+      "question": "Which DevOps practice ensures that code changes are automatically built and tested frequently?",
+      "options": [
+        "Continuous Delivery",
+        "Continuous Deployment",
+        "Continuous Integration",
+        "Agile Development"
+      ],
+      "correct": 2,
+      "memory_technique": "Build/test automatici → Continuous Integration."
+    },
+    {
+      "id": 80,
+      "question": "Which SAP Fiori elements floorplan is best suited for displaying details of a single object with sections?",
+      "options": [
+        "Object page",
+        "List report",
+        "Analytical list page",
+        "Worklist"
+      ],
+      "correct": 0,
+      "memory_technique": "Dettagli singolo oggetto → Object page."
+    }
+  ]

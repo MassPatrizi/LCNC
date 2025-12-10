@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.11
 """
-SAP Build C_LCNC_2406 Quiz Application - Web Version
-App web interattiva per memorizzare le 60 domande del quiz SAP Build
+SAP Cloud Application Programming Model Quiz Application - Web Version
+App web interattiva per memorizzare le domande del quiz SAP CAP
 Ottimizzata per mobile e desktop
 """
 
@@ -12,7 +12,7 @@ from pathlib import Path
 
 # Configurazione pagina
 st.set_page_config(
-    page_title="SAP Build Quiz",
+    page_title="SAP CAP Quiz",
     page_icon="📚",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -261,8 +261,8 @@ def show_home_page():
     # Header
     st.markdown("""
     <div class="main-header">
-        <div class="main-title">SAP Build Practice Quiz</div>
-        <div class="main-subtitle">Certificazione C_LCNC_2406</div>
+        <div class="main-title">SAP CAP Practice Quiz</div>
+        <div class="main-subtitle">SAP Certified Associate - Backend Developer - SAP Cloud Application Programming Model</div>
     </div>
     """, unsafe_allow_html=True)
     
