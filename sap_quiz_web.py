@@ -276,7 +276,7 @@ def show_home_page():
         st.markdown("""
         <div class="quiz-card" style="text-align: center;">
             <h2 style="color: #e0e0e0; margin-bottom: 1rem;">📋 Ordine Normale</h2>
-            <p style="color: #b0b0b0;">Domande in ordine sequenziale<br>(dalla 1 alla 60)</p>
+            <p style="color: #b0b0b0;">Domande in ordine sequenziale<br>(dalla 1 alla 80)</p>
         </div>
         """, unsafe_allow_html=True)
         
